@@ -1,2 +1,1 @@
-# Portfolio
-About me
+# GRIET
