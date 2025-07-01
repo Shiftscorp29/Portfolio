@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devansh Kumar - AI Enthusiast & Java Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Devansh Kumar - B.Tech student passionate about AI, software development, and building smart tech solutions."
+    />
+    <meta name="author" content="Devansh Kumar" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Devansh Kumar - AI Enthusiast & Java Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Devansh Kumar - B.Tech student passionate about AI, software development, and building smart tech solutions."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="min-h-screen bg-background text-foreground">
+      <!-- Navigation -->
+      <nav class="nav-container">
+        <div class="nav-content">
+          <div class="nav-inner">
+            <div class="brand">Portfolio</div>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+              <button data-section="home" class="nav-item active">Home</button>
+              <button data-section="about" class="nav-item">About</button>
+              <button data-section="projects" class="nav-item">Projects</button>
+              <button data-section="contact" class="nav-item">Contact</button>
+              <button id="theme-toggle" class="theme-toggle">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+              </button>
+            </div>
+
+            <!-- Mobile Navigation Button -->
+            <div class="mobile-nav-controls">
+              <button id="theme-toggle-mobile" class="theme-toggle">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+              </button>
+              <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                <i data-lucide="menu" class="menu-icon"></i>
+                <i data-lucide="x" class="close-icon hidden"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Navigation Menu -->
+          <div id="mobile-menu" class="mobile-menu hidden">
+            <button data-section="home" class="mobile-nav-item">Home</button>
+            <button data-section="about" class="mobile-nav-item">About</button>
+            <button data-section="projects" class="mobile-nav-item">
+              Projects
+            </button>
+            <button data-section="contact" class="mobile-nav-item">
+              Contact
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-grid">
+            <div class="hero-content animate-fade-in">
+              <div class="hero-text">
+                <h1 class="hero-title">
+                  Hi, I'm <span class="text-primary">Devansh Kumar</span>
+                </h1>
+                <p class="hero-description">
+                  A B.Tech student passionate about AI, problem-solving, and
+                  building smart tech solutions. Currently pursuing my degree at
+                  Gokaraju Rangaraju Institute of Engineering & Technology, I'm
+                  eager to gain real-world experience through internships and
+                  hands-on projects.
+                </p>
+              </div>
+
+              <div class="hero-buttons">
+                <button data-section="projects" class="btn btn-primary">
+                  Explore My Work
+                </button>
+                <button data-section="contact" class="btn btn-outline">
+                  Get In Touch
+                </button>
+              </div>
+
+              <div class="social-links">
+                <a href="mailto:kdevansh2910@gmail.com" class="social-link">
+                  <i data-lucide="mail"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/devansh-kumar-110139260/"
+                  class="social-link"
+                >
+                  <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://github.com/Shiftscorp29" class="social-link">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-image animate-fade-in">
+              <div class="image-container">
+                <div class="profile-image">
+                  <img
+                    src="https://i.postimg.cc/RFfqBm20/ME.jpg"
+                    alt="Devansh Kumar"
+                  />
+                </div>
+                <div class="image-caption">
+                  <p>AI enthusiast & Java Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-indicator animate-fade-in">
+            <button data-section="about" class="scroll-button">
+              <span>Learn More</span>
+              <i data-lucide="chevron-down" class="bounce"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="section-header animate-fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-content animate-fade-in">
+              <div class="about-text">
+                <p>
+                  I'm a dedicated B.Tech student seeking to grow through
+                  real-world internship opportunities. With proficiency in Java,
+                  SQL, and HTML, I have a strong focus on software development
+                  and database management.
+                </p>
+                <p>
+                  I'm enthusiastic about working in dynamic teams and committed
+                  to continuous learning. My passion for AI and technology
+                  drives me to explore innovative solutions and tackle complex
+                  problems.
+                </p>
+              </div>
+
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h4>Technical Skills</h4>
+                  <div class="skill-tags">
+                    <span class="skill-tag secondary">Java</span>
+                    <span class="skill-tag secondary">SQL</span>
+                    <span class="skill-tag secondary">HTML</span>
+                    <span class="skill-tag secondary">AI Development</span>
+                  </div>
+                </div>
+
+                <div class="skill-category">
+                  <h4>Soft Skills</h4>
+                  <div class="skill-tags">
+                    <span class="skill-tag outline">Problem-solving</span>
+                    <span class="skill-tag outline">Video editing</span>
+                    <span class="skill-tag outline">Team Collaboration</span>
+                    <span class="skill-tag outline">Continuous Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="education-card animate-fade-in">
+              <h3>Education</h3>
+              <div class="education-items">
+                <div class="education-item primary">
+                  <h4>B.Tech (Pursuing)</h4>
+                  <p>
+                    Gokaraju Rangaraju Institute of Engineering & Technology
+                  </p>
+                  <span>Graduating 2026</span>
+                </div>
+                <div class="education-item">
+                  <h4>Intermediate</h4>
+                  <p>Narayana Junior College, Hyderabad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="section-header animate-fade-in">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card animate-fade-in">
+              <div class="project-content">
+                <h3>Secure Chat Application</h3>
+                <p>
+                  Java-based multi-threaded chat system supporting both private
+                  and public message transfer with robust security features.
+                </p>
+
+                <div class="project-section">
+                  <h4>Technologies Used:</h4>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Multi-threading</span>
+                    <span class="tech-tag">Socket Programming</span>
+                    <span class="tech-tag">Security</span>
+                  </div>
+                </div>
+
+                <div class="project-section">
+                  <h4>Key Features:</h4>
+                  <ul class="feature-list">
+                    <li>Real-time messaging</li>
+                    <li>Secure encryption</li>
+                    <li>User authentication</li>
+                  </ul>
+                </div>
+
+                <button class="btn btn-outline project-btn">
+                  <i data-lucide="external-link"></i>
+                  View Project
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card animate-fade-in">
+              <div class="project-content">
+                <h3>NEXORA – Craft, Connect, Command</h3>
+                <p>
+                  AI-powered web application for creating and managing digital
+                  assistants with a clean and intuitive user interface.
+                </p>
+
+                <div class="project-section">
+                  <h4>Technologies Used:</h4>
+                  <div class="tech-tags">
+                    <span class="tech-tag">AI/ML</span>
+                    <span class="tech-tag">Web Development</span>
+                    <span class="tech-tag">UI/UX Design</span>
+                    <span class="tech-tag">API Integration</span>
+                  </div>
+                </div>
+
+                <div class="project-section">
+                  <h4>Key Features:</h4>
+                  <ul class="feature-list">
+                    <li>AI-powered assistants</li>
+                    <li>Intuitive design</li>
+                    <li>Command management</li>
+                  </ul>
+                </div>
+
+                <button class="btn btn-outline project-btn">
+                  <i data-lucide="external-link"></i>
+                  View Project
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card animate-fade-in">
+              <div class="project-content">
+                <h3>AI - Lunar Lander</h3>
+                <p>
+                  A custom AI agent trained to land a spacecraft safely in the
+                  classic <strong>OpenAI Gym LunarLander-v2</strong> environment
+                  using <strong>Deep Q-Learning</strong>. This project
+                  demonstrates my understanding of reinforcement learning
+                  algorithms and practical application of neural networks in
+                  simulated environments.
+                </p>
+
+                <div class="project-section">
+                  <h4>Technologies Used:</h4>
+                  <div class="tech-tags">
+                    <span class="tech-tag">AI</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Open AI Gym</span>
+                    <span class="tech-tag">Matplotlib</span>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-outline project-btn"
+                  onclick="window.open('https://github.com/Shiftscorp29/Lunar-Lander', '_blank')"
+                  style="margin-top: 3rem"
+                >
+                  <i data-lucide="external-link"></i>
+                  View Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="section-header animate-fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              Let's connect and explore opportunities together
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info animate-fade-in">
+              <a href="mailto:kdevansh2910@gmail.com" class="contact-card">
+                <i data-lucide="mail" class="contact-icon"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>kdevansh2910@gmail.com</p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/devansh-kumar-110139260/"
+                class="contact-card"
+              >
+                <i data-lucide="linkedin" class="contact-icon"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p>Connect professionally</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/Shiftscorp29/" class="contact-card">
+                <i data-lucide="github" class="contact-icon"></i>
+                <div>
+                  <h3>GitHub</h3>
+                  <p>View my code</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-form-container animate-fade-in">
+              <h3>Send a Message</h3>
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">
+                  <span class="submit-text">Send Message</span>
+                  <span class="submit-loading hidden">Sending...</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <p>&copy; 2024 Devansh Kumar. Built with passion and code.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+      <div class="toast-content">
+        <div class="toast-header">
+          <span class="toast-title"></span>
+          <button class="toast-close">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="toast-description"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
