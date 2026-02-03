@@ -380,7 +380,6 @@ if ("IntersectionObserver" in window) {
     sections.forEach((section) => observer.observe(section));
   });
 }
-
 // Utility functions for external use
 window.portfolioUtils = {
   scrollToSection,
